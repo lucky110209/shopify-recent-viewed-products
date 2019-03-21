@@ -5,6 +5,10 @@ To display recently viewed products in Shopify
 
 Go to the corresponds folders, then copy the code from these file and insert into your current theme.
 
+# Demo
+
+https://hamsademo.myshopify.com/collections/adidas/products/adidas-kids-stan-smith
+
 # Configuration
 
 Configuration parameters are all optional.
