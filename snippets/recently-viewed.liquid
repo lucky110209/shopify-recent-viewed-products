@@ -1,0 +1,97 @@
+{{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
+{{ 'jquery.products.min.js' | asset_url | script_tag }}
+
+<div id="recently-viewed-products" class="collection clearfix" style="display:none">
+  <h2>Recently Viewed Products</h2>
+</div>
+
+{% raw %}
+<script id="recently-viewed-product-template"  type="text/x-jquery-tmpl">
+<div id="product-${handle}" class="product">
+  <div class="image">
+    <a href="${url}">
+      <img src="${Shopify.Products.resizeImage(featured_image, "medium")}" />
+    </a>
+  </div>
+  <div class="details">
+    <a href="${url}">
+      <span class="title">${title}</span>
+      <span class="price">{{if price_varies}}From {{/if}}${Shopify.formatMoney(price)}</span>
+    </a>
+  </div>
+</div>
+</script>
+{% endraw %}
+
+<script>
+Shopify.Products.showRecentlyViewed( { howManyToShow:4 } );
+</script>
+
+<style>
+
+/* Some styles to get you started */
+
+.collection {
+clear: both;
+padding-top: 50px;
+}
+
+.collection .product {
+float: left;
+text-align: center;
+width: 162px; /* 160px + 1px + 1px for the borders on either side */
+margin: 0 14px 14px 0;
+padding: 0;
+position: relative; /* used to display absolutely positioned sale tag */
+overflow: hidden;
+}
+
+.collection .product.last {
+margin-right: 0;
+}
+
+.collection .product .image {
+border: 1px solid #E0E0E0;
+margin-bottom: 10px;
+height: 160px;
+overflow: hidden;
+}
+
+.collection .product .cy {
+display: block;
+margin: 0 auto;
+}
+
+.collection .product .image img {
+max-width: 160px;
+}
+
+.collection .product .title {
+display: block;
+line-height: 16px;
+font-size: 12px;
+color: #222;
+font-weight: 700;
+}
+
+.collection .product .price {
+display: block;
+line-height: 16px;
+font-size: 11px;
+color: #777;
+font-weight: normal;
+}
+
+/* new clearfix */
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+</style>
