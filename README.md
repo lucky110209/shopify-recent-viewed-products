@@ -13,7 +13,7 @@ You pass an object to Shopify.Products.showRecentlyViewed().
 
 Example:
 
-code. Shopify.Products.showRecentlyViewed( { howManyToShow:4 } );
+**Shopify.Products.showRecentlyViewed( { howManyToShow:4 } );**
 
 * **howManyToShow** - how many recently viewed products to show / list. Default value: 3. A number. Optional.
 * **howManyToStoreInMemory** - how many recently viewed products to store in memory (the handle of the product is stored in a cookie that lives for 3 months). Default value: 10. A number. Optional.
