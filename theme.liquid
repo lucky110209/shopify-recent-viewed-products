@@ -1,0 +1,15 @@
+<!-- Begin Recently Viewed Products -->
+
+{{ '//code.jquery.com/jquery-3.3.1.js' | script_tag }}
+{{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
+{{ 'jquery.products.min.js' | asset_url | script_tag }}
+
+{% if template contains 'product' %}
+
+<script>
+Shopify.Products.recordRecentlyViewed();
+</script>
+
+{% endif %}
+
+<!-- End Recently Viewed Products -->
