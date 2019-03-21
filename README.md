@@ -3,7 +3,7 @@ To display recently viewed products in Shopify
 
 # Install
 
-Go to the coresspondse folder, then copy the code from these file and insert into your current theme.
+Go to the corresponds folders, then copy the code from these file and insert into your current theme.
 
 # Configuration
 
