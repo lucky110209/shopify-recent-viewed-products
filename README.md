@@ -24,3 +24,7 @@ Example:
 * **wrapperId** - the id of the element in which to render the recently viewed product template. If none is specified, the script will look for a div or ul (or whatever element) with id 'recently-viewed-products' in the document. A string. Optional. Careful: don't use '#', just put here the value of the id attribute.
 
 * **onComplete** - A function to run when all recently viewed products have been rendered on the page. Totally optional. Use this if you need to do anything special when all is said and done. (You need a callback function here because Ajax calls are used to fetch information about the recently viewed products, to show a thumbnail, their price, etc.)
+
+# Need help?
+
+Contact me at hiennv@hamsa.co
