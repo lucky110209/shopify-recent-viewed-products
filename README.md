@@ -27,4 +27,4 @@ Example:
 
 # Need help?
 
-Contact me at hiennv@hamsa.co
+Contact me at vince@happypoints.io
